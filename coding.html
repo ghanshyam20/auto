@@ -3,8 +3,9 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Bash Scripts</title>
+<title>Bash Automation Scripts</title>
 <link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -24,14 +25,29 @@
 <h1>Bash Automation Scripts</h1>
 
 <p>
-The automation toolkit contains several scripts responsible for deploying and configuring the server environment.
+This page describes how the automation toolkit was developed and how the Bash scripts are structured.
+The project uses several scripts that work together to deploy a complete WordPress server environment.
 </p>
+
+<h2>Project Folder Creation</h2>
+
+<pre>
+mkdir automation_tool_kit
+cd automation_tool_kit
+
+mkdir scripts
+mkdir monitor
+</pre>
 
 <h2>Main Deployment Script</h2>
 
 <pre>
 sudo ./deploy.sh
 </pre>
+
+<p>
+The deployment script acts as the central controller that runs all other scripts in the correct order.
+</p>
 
 <h2>Server Stack Installation</h2>
 
@@ -45,6 +61,7 @@ sudo apt install apache2 mariadb-server php php-mysql
 <pre>
 CREATE DATABASE wordpress;
 CREATE USER 'wpuser'@'localhost';
+GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost';
 </pre>
 
 <h2>System Monitoring</h2>
@@ -55,20 +72,39 @@ free -h
 df -h
 </pre>
 
+<section>
+
+<h2>Development Screenshots</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="images/screenshots/script_editor.png">
+<p>Writing automation scripts</p>
+</div>
+
+<div class="card">
+<img src="images/screenshots/deployment_terminal.png">
+<p>Running deployment on server</p>
+</div>
+
+</div>
+
+</section>
+
 </div>
 
 <footer class="footer">
-  <div class="footer-content">
+<div class="footer-content">
+<p>© 2026 Ghanshyam Bhattarai</p>
 
-    <p>© 2026 Ghanshyam Bhattarai</p>
+<div class="footer-links">
+<a href="https://github.com/ghanshyam20">GitHub</a>
+<a href="#">LinkedIn</a>
+<a href="mailto:yourmail@email.com">Email</a>
+</div>
 
-    <div class="footer-links">
-      <a href="https://github.com/ghanshyam20" target="_blank">GitHub</a>
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-      <a href="mailto:yourmail@email.com">Email</a>
-    </div>
-
-  </div>
+</div>
 </footer>
 
 </body>

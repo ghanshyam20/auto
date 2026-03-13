@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <title>Automation Workflow</title>
 <link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -24,11 +25,10 @@
 <h1>Automation Workflow</h1>
 
 <p>
-The automation process is managed through a central deployment script which coordinates the installation and configuration of all required components.
+The automation workflow is controlled by a central deployment script that executes the required setup scripts in sequence.
 </p>
 
 <ol>
-
 <li>Clone project repository</li>
 <li>Run deployment script</li>
 <li>Install Apache, PHP and MariaDB</li>
@@ -36,23 +36,39 @@ The automation process is managed through a central deployment script which coor
 <li>Install WordPress</li>
 <li>Configure WordPress using WP-CLI</li>
 <li>Add demo content</li>
-<li>Check system monitoring</li>
-
+<li>Run system monitoring</li>
 </ol>
 
+<section>
+
+<h2>Architecture Diagram</h2>
+
+<div class="gallery">
+
+<div class="card">
+<a href="images/architecture/project_architecture.png">
+<img src="images/architecture/project_architecture.png">
+</a>
+<p>System architecture</p>
 </div>
+
+</div>
+
+</section>
+
+</div>
+
 <footer class="footer">
-  <div class="footer-content">
+<div class="footer-content">
+<p>© 2026 Ghanshyam Bhattarai</p>
 
-    <p>© 2026 Ghanshyam Bhattarai</p>
+<div class="footer-links">
+<a href="https://github.com/ghanshyam20">GitHub</a>
+<a href="#">LinkedIn</a>
+<a href="mailto:yourmail@email.com">Email</a>
+</div>
 
-    <div class="footer-links">
-      <a href="https://github.com/ghanshyam20" target="_blank">GitHub</a>
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-      <a href="mailto:yourmail@email.com">Email</a>
-    </div>
-
-  </div>
+</div>
 </footer>
 
 </body>

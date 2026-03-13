@@ -4,10 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Linux Web Server Automation Toolkit</title>
-
 <link rel="stylesheet" href="css/style.css">
 <script src="js/script.js" defer></script>
-
 </head>
 
 <body>
@@ -23,72 +21,53 @@
 </nav>
 
 <section class="hero">
-
 <h1>Linux Web Server Automation Toolkit</h1>
 <p>Automating Linux server deployment using Bash scripting</p>
-
 </section>
 
-
 <div class="container">
-
-<!-- PROJECT INTRO -->
 
 <section>
 
 <h2>Project Motivation</h2>
 
 <p>
-While studying Linux system administration I noticed that configuring a web server environment requires repeating many manual steps.
-Installing Apache, preparing the database, downloading WordPress and configuring permissions can take time and often leads to mistakes.
+During Linux administration practice I repeatedly had to install the same server environment again and again.
+Each setup required installing Apache, configuring the database server, preparing PHP and downloading WordPress.
+Even a small mistake in permissions or configuration could break the installation.
 </p>
 
 <p>
-To simplify this process I decided to create an automation toolkit using Bash scripting.
-Instead of manually executing every command, the entire deployment can be completed using a single script.
+Because of this repetitive process I decided to design a Bash based automation toolkit.
+The goal was to convert the entire manual setup into an automated deployment workflow.
+Instead of executing dozens of commands manually, the entire server environment can be prepared using one command.
 </p>
 
 </section>
-
-
-<!-- PROBLEMS -->
 
 <section>
 
 <h2>Problems Faced</h2>
 
 <ul>
-
-<li>Repeated server installation steps</li>
-<li>Manual configuration errors</li>
-<li>Time-consuming setup</li>
-<li>Difficulty recreating the same environment</li>
-
+<li>Repeated manual installation steps</li>
+<li>Configuration mistakes during setup</li>
+<li>Time consuming server preparation</li>
+<li>Difficult to recreate the same environment</li>
 </ul>
 
 </section>
-
-
-<!-- SOLUTION -->
 
 <section>
 
 <h2>Solution</h2>
 
 <p>
-This project introduces a Bash based automation toolkit that automatically installs the required server stack,
-configures the database and deploys a WordPress application.
-</p>
-
-<p>
-With a single command the system installs Apache, MariaDB, PHP and WordPress while also performing basic system monitoring.
+The solution is a Bash automation toolkit that installs and configures the full web stack automatically.
+The scripts install Apache, MariaDB, PHP and WordPress while also performing system checks and monitoring.
 </p>
 
 </section>
-
-
-
-<!-- ARCHITECTURE -->
 
 <section>
 
@@ -96,92 +75,62 @@ With a single command the system installs Apache, MariaDB, PHP and WordPress whi
 
 <div class="gallery">
 
-
 <div class="card">
-
 <a href="images/architecture/project_architecture.png" target="_blank">
-<img src="images/architecture/project_architecture.png" alt="Project architecture">
+<img src="images/architecture/project_architecture.png">
 </a>
-
 <p>System architecture overview</p>
-
 </div>
 
-
 <div class="card">
-
-<a href="" target="_blank">
-<img src="images/architecture/automation.png" alt="Automation pipeline design">
+<a href="images/architecture/test.drawio.png" target="_blank">
+<img src="images/architecture/test.drawio.png">
 </a>
-
-<p>Automation pipeline design</p>
-
+<p>Automation workflow diagram</p>
 </div>
 
 </div>
 
 </section>
-
-
-
-<!-- DEVELOPMENT SCREENSHOTS -->
 
 <section>
 
 <h2>Development Screenshots</h2>
 
-<p>
-I am continiously developing this so i am monitoring it so stay tuned for more updated . The layout automatically adjusts without stretching images.
-Click any image to view the full size.
-</p>
-
 <div class="gallery">
 
-
 <div class="card">
-
-<a href="images/architecture/test.drawio.png" target="_blank">
-<img src="images/architecture/server.jpg" alt="Server stack installation">
+<a href="images/screenshots/install_stack.png" target="_blank">
+<img src="images/screenshots/install_stack.png">
 </a>
-
 <p>Server stack installation</p>
-
 </div>
-
 
 <div class="card">
-
-<a href="" target="_blank">
-<img src="images/architecture/wordpres.png" alt="WordPress deployment">
+<a href="images/screenshots/deploy_script.png" target="_blank">
+<img src="images/screenshots/deploy_script.png">
 </a>
-
-<p>WordPress deployment</p>
-
+<p>Running deployment script</p>
 </div>
-
 
 </div>
 
 </section>
 
-
 </div>
 
-
 <footer class="footer">
-  <div class="footer-content">
+<div class="footer-content">
+<p>© 2026 Ghanshyam Bhattarai</p>
 
-    <p>© 2026 Ghanshyam Bhattarai</p>
+<div class="footer-links">
+<a href="https://github.com/ghanshyam20" target="_blank">GitHub</a>
+<a href="#" target="_blank">LinkedIn</a>
+<a href="mailto:yourmail@email.com">Email</a>
+</div>
 
-    <div class="footer-links">
-      <a href="https://github.com/ghanshyam20" target="_blank">GitHub</a>
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-      <a href="mailto:yourmail@email.com">Email</a>
-    </div>
-
-  </div>
+</div>
 </footer>
-
 
 </body>
 </html>
