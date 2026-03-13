@@ -1,15 +1,87 @@
-<h2>Bash Automation Scripts</h2>
+<div class="container">
 
-<section class="gallery">
+<h1>Bash Automation Scripts</h1>
 
-<div class="card">
-<img src="images/coding/install_script.png">
-<p>Script for automatic Apache installation.</p>
+<p>
+The automation toolkit consists of several Bash scripts.  
+Each script performs a specific task in the deployment pipeline.
+</p>
+
+<h2>Main Deployment Script</h2>
+
+<pre><code>
+
+#!/bin/bash
+
+echo "Starting WordPress automated deployment..."
+
+chmod +x scripts/*.sh
+chmod +x monitor/*.sh
+
+./scripts/install_stack.sh
+./scripts/setup_database.sh
+./scripts/install_wordpress.sh
+./scripts/install_wpcli.sh
+./scripts/configure_wordpress.sh
+./scripts/install_content.sh
+./monitor/system_monitor.sh
+
+</code></pre>
+
+
+<h2>Install Server Stack</h2>
+
+<pre><code>
+
+sudo apt update -y
+sudo apt install apache2 mariadb-server php php-mysql
+
+</code></pre>
+
+
+<h2>Database Setup</h2>
+
+<pre><code>
+
+CREATE DATABASE wordpress;
+CREATE USER 'wpuser'@'localhost';
+
+</code></pre>
+
+
+<h2>System Monitoring Script</h2>
+
+<pre><code>
+
+echo "CPU usage"
+uptime
+
+echo "Memory usage"
+free -h
+
+echo "Disk usage"
+df -h
+
+</code></pre>
+
+
 </div>
 
-<div class="card">
-<img src="images/coding/monitor_script.png">
-<p>Script used to monitor server status.</p>
+
+<footer class="footer">
+
+<div class="footer-content">
+
+<p>© 2026 Ghanshyam Bhattarai — Linux Web Server Automation Project</p>
+
+<div class="social">
+
+<a href="https://github.com/ghanshyam20" target="_blank">GitHub</a>
+<a href="https://linkedin.com" target="_blank">LinkedIn</a>
+<a href="mailto:ghanshyam@example.com">Email</a>
+
 </div>
 
-</section>
+</div>
+
+</footer>
