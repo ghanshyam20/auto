@@ -2,9 +2,10 @@
 <html>
 
 <head>
-<title>Linux Web Server Automation Project</title>
+<meta charset="UTF-8">
+<title>Linux Web Server Automation Toolkit</title>
 <link rel="stylesheet" href="css/style.css">
-<script src="js/main.js"></script>
+<script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -23,9 +24,7 @@
 
 <h1>Linux Web Server Automation Toolkit</h1>
 
-<p>
-Automating Linux server deployment using Bash scripting
-</p>
+<p>Automating Linux server deployment using Bash scripting</p>
 
 </section>
 
@@ -33,34 +32,30 @@ Automating Linux server deployment using Bash scripting
 
 <section>
 
-<h2>How This Project Started</h2>
+<h2>Project Motivation</h2>
 
 <p>
-While learning Linux system administration I noticed that setting up a web server environment requires many repetitive steps. 
-Every time a new server is prepared, the administrator has to install Apache, configure a database, install PHP, download WordPress and set permissions manually.
+While studying Linux system administration I noticed that configuring a web server environment requires repeating many manual steps.
+Installing Apache, preparing the database, downloading WordPress and configuring permissions can take time and often leads to mistakes.
 </p>
 
 <p>
-During practice labs I kept repeating the same commands again and again. 
-That made me think about automation. Instead of running many commands manually, why not create a script that performs the whole setup automatically?
-</p>
-
-<p>
-This idea became the starting point of this project. The goal was to build a small automation toolkit using Bash scripting that can deploy a complete web server environment with a single command.
+To simplify this process I decided to create an automation toolkit using Bash scripting.
+Instead of manually executing every command, the entire deployment can be completed using a single script.
 </p>
 
 </section>
 
 <section>
 
-<h2>Problems I Faced</h2>
+<h2>Problems Faced</h2>
 
 <ul>
 
-<li>Repeating the same installation commands multiple times</li>
-<li>Manual configuration taking too much time</li>
-<li>Risk of mistakes while configuring services</li>
-<li>Difficulty recreating the same environment again</li>
+<li>Repeated server installation steps</li>
+<li>Manual configuration errors</li>
+<li>Time-consuming setup</li>
+<li>Difficulty recreating the same environment</li>
 
 </ul>
 
@@ -71,12 +66,12 @@ This idea became the starting point of this project. The goal was to build a sma
 <h2>Solution</h2>
 
 <p>
-To solve this problem I developed a Bash based automation toolkit. 
-The toolkit installs the server stack, prepares the database, installs WordPress and configures the system automatically.
+This project introduces a Bash based automation toolkit that automatically installs the required server stack,
+configures the database and deploys a WordPress application.
 </p>
 
 <p>
-Instead of running many commands manually, everything is executed through a single deployment script.
+With a single command the system installs Apache, MariaDB, PHP and WordPress while also performing basic system monitoring.
 </p>
 
 </section>
@@ -93,7 +88,7 @@ Instead of running many commands manually, everything is executed through a sing
 </div>
 
 <div class="card">
-<img src="images/architecture/architecture.jpg">
+<img src="images/architecture/project _architecture.png">
 <p>Automation pipeline design</p>
 </div>
 
@@ -101,27 +96,23 @@ Instead of running many commands manually, everything is executed through a sing
 
 </section>
 
-
 <section>
 
-<h2>Project Screenshots</h2>
+<h2>Development Screenshots</h2>
 
 <p>
-Below are screenshots from the development and testing process.
-You can add as many images as you want inside the images folder and they will automatically fit in the grid layout.
+You can add unlimited screenshots here. The layout automatically adjusts without stretching images.
 </p>
 
 <div class="gallery">
 
-<!-- Add as many images as you want -->
-
 <div class="card">
-<img src="images/demo1.jpg">
-<p>Testing server installation</p>
+<img src="images/screenshots/demo1.jpg">
+<p>Server stack installation</p>
 </div>
 
 <div class="card">
-<img src="images/demo2.jpg">
+<img src="images/screenshots/demo2.jpg">
 <p>WordPress deployment</p>
 </div>
 
@@ -144,5 +135,4 @@ You can add as many images as you want inside the images folder and they will au
 </footer>
 
 </body>
-
 </html>

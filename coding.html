@@ -2,7 +2,8 @@
 <html>
 
 <head>
-<title>Project Scripts</title>
+<meta charset="UTF-8">
+<title>Bash Scripts</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -23,35 +24,36 @@
 <h1>Bash Automation Scripts</h1>
 
 <p>
-This page contains the core scripts used in the automation toolkit.
-Each script performs a specific task during the deployment process.
+The automation toolkit contains several scripts responsible for deploying and configuring the server environment.
 </p>
 
 <h2>Main Deployment Script</h2>
 
 <pre>
-
 sudo ./deploy.sh
-
 </pre>
 
 <h2>Server Stack Installation</h2>
 
-<p>
-Installs Apache, MariaDB, PHP and required dependencies.
-</p>
+<pre>
+sudo apt update -y
+sudo apt install apache2 mariadb-server php php-mysql
+</pre>
 
 <h2>Database Setup</h2>
 
-<p>
-Creates WordPress database and user automatically.
-</p>
+<pre>
+CREATE DATABASE wordpress;
+CREATE USER 'wpuser'@'localhost';
+</pre>
 
 <h2>System Monitoring</h2>
 
-<p>
-Displays system uptime, memory usage and disk usage.
-</p>
+<pre>
+uptime
+free -h
+df -h
+</pre>
 
 </div>
 
@@ -68,5 +70,4 @@ Displays system uptime, memory usage and disk usage.
 </footer>
 
 </body>
-
 </html>
