@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Linux Web Server Automation Project</title>
 <link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
 </head>
 
 <body>
@@ -22,48 +24,125 @@
 <h1>Linux Web Server Automation Toolkit</h1>
 
 <p>
-Automating Linux server deployment using Bash scripting.
+Automating Linux server deployment using Bash scripting
 </p>
 
 </section>
 
 <div class="container">
 
+<section>
+
+<h2>How This Project Started</h2>
+
+<p>
+While learning Linux system administration I noticed that setting up a web server environment requires many repetitive steps. 
+Every time a new server is prepared, the administrator has to install Apache, configure a database, install PHP, download WordPress and set permissions manually.
+</p>
+
+<p>
+During practice labs I kept repeating the same commands again and again. 
+That made me think about automation. Instead of running many commands manually, why not create a script that performs the whole setup automatically?
+</p>
+
+<p>
+This idea became the starting point of this project. The goal was to build a small automation toolkit using Bash scripting that can deploy a complete web server environment with a single command.
+</p>
+
+</section>
+
+<section>
+
+<h2>Problems I Faced</h2>
+
+<ul>
+
+<li>Repeating the same installation commands multiple times</li>
+<li>Manual configuration taking too much time</li>
+<li>Risk of mistakes while configuring services</li>
+<li>Difficulty recreating the same environment again</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Solution</h2>
+
+<p>
+To solve this problem I developed a Bash based automation toolkit. 
+The toolkit installs the server stack, prepares the database, installs WordPress and configures the system automatically.
+</p>
+
+<p>
+Instead of running many commands manually, everything is executed through a single deployment script.
+</p>
+
+</section>
+
+<section>
+
 <h2>Project Architecture</h2>
 
-<section class="gallery">
+<div class="gallery">
 
 <div class="card">
-<img src="images/architecture/architecture.jpg" alt="System architecture">
-<p>System architecture overview.</p>
+<img src="images/architecture/architecture.jpg">
+<p>System architecture overview</p>
 </div>
 
 <div class="card">
-<img src="images/architecture/architecture.jpg" alt="Automation pipeline">
-<p>Automation pipeline design.</p>
+<img src="images/architecture/architecture.jpg">
+<p>Automation pipeline design</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Project Screenshots</h2>
+
+<p>
+Below are screenshots from the development and testing process.
+You can add as many images as you want inside the images folder and they will automatically fit in the grid layout.
+</p>
+
+<div class="gallery">
+
+<!-- Add as many images as you want -->
+
+<div class="card">
+<img src="images/demo1.jpg">
+<p>Testing server installation</p>
+</div>
+
+<div class="card">
+<img src="images/demo2.jpg">
+<p>WordPress deployment</p>
+</div>
+
 </div>
 
 </section>
 
 </div>
 
-<footer class="footer">
+<footer>
 
-<div class="footer-content">
+<p>© 2026 Ghanshyam Bhattarai</p>
 
-<p>© 2026 Ghanshyam Bhattarai — Linux Web Server Automation Project</p>
-
-<div class="social">
-
-<a href="https://github.com/ghanshyam20" target="_blank">GitHub</a>
-<a href="https://linkedin.com" target="_blank">LinkedIn</a>
-<a href="mailto:ghanshyam@example.com">Email</a>
-
-</div>
-
-</div>
+<p>
+<a href="https://github.com/ghanshyam20">GitHub</a>
+<a href="#">LinkedIn</a>
+<a href="mailto:yourmail@email.com">Email</a>
+</p>
 
 </footer>
 
 </body>
+
 </html>

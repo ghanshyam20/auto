@@ -1,87 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Project Scripts</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="coding.html">Coding</a></li>
+<li><a href="automation.html">Automation</a></li>
+<li><a href="documentation.html">Documentation</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
 <div class="container">
 
 <h1>Bash Automation Scripts</h1>
 
 <p>
-The automation toolkit consists of several Bash scripts.  
-Each script performs a specific task in the deployment pipeline.
+This page contains the core scripts used in the automation toolkit.
+Each script performs a specific task during the deployment process.
 </p>
 
 <h2>Main Deployment Script</h2>
 
-<pre><code>
+<pre>
 
-#!/bin/bash
+sudo ./deploy.sh
 
-echo "Starting WordPress automated deployment..."
+</pre>
 
-chmod +x scripts/*.sh
-chmod +x monitor/*.sh
+<h2>Server Stack Installation</h2>
 
-./scripts/install_stack.sh
-./scripts/setup_database.sh
-./scripts/install_wordpress.sh
-./scripts/install_wpcli.sh
-./scripts/configure_wordpress.sh
-./scripts/install_content.sh
-./monitor/system_monitor.sh
-
-</code></pre>
-
-
-<h2>Install Server Stack</h2>
-
-<pre><code>
-
-sudo apt update -y
-sudo apt install apache2 mariadb-server php php-mysql
-
-</code></pre>
-
+<p>
+Installs Apache, MariaDB, PHP and required dependencies.
+</p>
 
 <h2>Database Setup</h2>
 
-<pre><code>
+<p>
+Creates WordPress database and user automatically.
+</p>
 
-CREATE DATABASE wordpress;
-CREATE USER 'wpuser'@'localhost';
+<h2>System Monitoring</h2>
 
-</code></pre>
-
-
-<h2>System Monitoring Script</h2>
-
-<pre><code>
-
-echo "CPU usage"
-uptime
-
-echo "Memory usage"
-free -h
-
-echo "Disk usage"
-df -h
-
-</code></pre>
-
+<p>
+Displays system uptime, memory usage and disk usage.
+</p>
 
 </div>
 
+<footer>
 
-<footer class="footer">
+<p>© 2026 Ghanshyam Bhattarai</p>
 
-<div class="footer-content">
-
-<p>© 2026 Ghanshyam Bhattarai — Linux Web Server Automation Project</p>
-
-<div class="social">
-
-<a href="https://github.com/ghanshyam20" target="_blank">GitHub</a>
-<a href="https://linkedin.com" target="_blank">LinkedIn</a>
-<a href="mailto:ghanshyam@example.com">Email</a>
-
-</div>
-
-</div>
+<p>
+<a href="https://github.com/ghanshyam20">GitHub</a>
+<a href="#">LinkedIn</a>
+<a href="mailto:yourmail@email.com">Email</a>
+</p>
 
 </footer>
+
+</body>
+
+</html>
